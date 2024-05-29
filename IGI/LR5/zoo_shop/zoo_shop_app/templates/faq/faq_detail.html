@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>{{ faq.question }}</h1>
+  <p>{{ faq.answer }}</p>
+  <a href="{% url 'faq_update' faq.id %}" class="btn btn-secondary">Изменить</a>
+  <a href="{% url 'faq_delete' faq.id %}" class="btn btn-danger">Удалить</a>
+  <a href="{% url 'faq_list' %}" class="btn btn-primary">Назад</a>
+{% endblock %}

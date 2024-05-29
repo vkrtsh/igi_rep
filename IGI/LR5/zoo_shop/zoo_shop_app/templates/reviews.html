@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Отзывы</h1>
+{% for review in reviews %}
+    <div>
+        <h2>{{ review.name }}</h2>
+        <p>Оценка: {{ review.rate }}</p>
+        <p>{{ review.text }}</p>
+        <p>Дата: {{ review.created }}</p>
+        <p>-------------------------------------------</p>
+    </div>
+{% endfor %}
+
+{% if request.user.client %}
+    <a href="{% url 'add_review' %}">Добавить отзыв</a>
+{% endif %}
+{% endblock %}

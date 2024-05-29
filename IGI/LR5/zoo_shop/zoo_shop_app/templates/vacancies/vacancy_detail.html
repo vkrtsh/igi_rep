@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>{{ vacancy.position }}</h1>
+  <p>{{ vacancy.description }}</p>
+  <p>Зарплата: {{ vacancy.salary }} руб.</p>
+  <a href="{% url 'vacancy_update' vacancy.id %}">Редактировать</a>
+  <a href="{% url 'vacancy_delete' vacancy.id %}">Удалить</a>
+  <a href="{% url 'vacancy_list' %}">Назад к списку</a>
+{% endblock %}

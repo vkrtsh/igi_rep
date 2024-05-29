@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Факты о котах</h1>
+<ul>
+    {% for fact in facts %}
+        <li>
+            {{ fact }}
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}

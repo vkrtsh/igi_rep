@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Список товаров</h1>
+
+  {% if messages %}
+    <ul class="messages">
+      {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  <form method="get">
+    <label for="category">Категория:</label>
+    <select name="category" id="category">
+      <option value="all">Все</option>
+      {% for category in categories %}
+        <option value="{{ category.id }}"{% if request.GET.category == category.id|stringformat:"s" %} selected{% endif %}>{{ category.name }}</option>
+      {% endfor %}
+    </select>
+
+    <label for="price">Цена:</label>
+    <input type="text" name="price" id="price" value="">
+
+    <label for="name">Имя:</label>
+    <input type="text" name="name" id="name" value="">
+
+    <label for="sort">Сортировать по:</label>
+    <select name="sort" id="sort">
+      <option value="name" {% if sort_by == 'name' %}selected{% endif %}>Имя</option>
+      <option value="price" {% if sort_by == 'price' %}selected{% endif %}>Цена</option>
+    </select>
+
+    <label for="price_sort">Порядок цены:</label>
+    <select name="price_sort" id="price_sort">
+      <option value="asc" {% if price_sort == 'asc' %}selected{% endif %}>По возрастанию</option>
+      <option value="desc" {% if price_sort == 'desc' %}selected{% endif %}>По убыванию</option>
+    </select>
+
+    <button type="submit">Применить</button>
+  </form>
+
+  <ul>
+    {% for product in products %}
+      <li>
+          <img src="{{ product.image.url }}" width="200" height="250">
+
+          <p>{{ product.name }}</p>
+
+          <p>Цена: {{ product.price }} руб.</p>
+
+          {% if request.user.is_superuser %}
+                <p>Артикул: {{ product.article }}</p>
+                <p>Поставщик: {{ product.supplier }}</p>
+          {% endif %}
+
+          {% if request.user.client %}
+              <form action="{% url 'add_to_cart' product.id %}" method="get">
+              <button type="submit">Добавить в корзину</button>
+              </form>
+          {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+
+{% endblock %}
