@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Последняя опубликованная статья</h1>
+<h2>{{ latest_article.title }}</h2>
+<p>{{ latest_article.text }}</p>
+<img src="{{ latest_article.image.url }}" alt="{{ latest_article.title }}">
+{#<a href="{% url '' latest_article.id %}">Читать далее</a>#}
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Промокоды и купоны</h1>
+<h2>Действующие промокоды</h2>
+{% for promo in promo_active %}
+    <div>
+        <h3>{{ promo.code }}</h3>
+        <p>{{ promo.discount }}</p>
+        <p>{{ promo.text }}</p>
+        <p>Действителен до: {{ promo.valid_date }}</p>
+    </div>
+{% endfor %}
+
+<h2>Архивные промокоды</h2>
+{% for promo in promo_archived %}
+    <div>
+        <h3>{{ promo.code }}</h3>
+        <p>{{ promo.discount }}</p>
+        <p>{{ promo.text }}</p>
+        <p>Истек: {{ promo.valid_date }}</p>
+    </div>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Shopping Cart</h1>
+  <ul>
+    {% for item in cart_summary %}
+      <li>{{ item.product.name }}: {{ item.quantity }} x {{ item.product.price }} = {{ item.total_cost }}</li>
+    {% endfor %}
+  </ul>
+  <p>Total Cost: {{ total_cost }}</p>
+
+  <p><form action="{% url 'create_order' %}" method="get">
+    <button type="submit" class="btn btn-primary">Перейти к оформлению заказа</button>
+    </form></p>
+    <p>
+    <form action="{% url 'clear_cart' %}" method="post">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-secondary">Очистить корзину</button>
+    </form> </p>
+    <p>
+  <form action="{% url 'products' %}" method="get">
+    <button type="submit" class="btn btn-primary">Продолжить покупки</button>
+  </form> </p>
+
+{% endblock %}

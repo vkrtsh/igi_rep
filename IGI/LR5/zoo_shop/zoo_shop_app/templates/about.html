@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>О компании</h1>
+<img src="{{ shop_info.image.url }}" alt="Логотип компании">
+<p>{{ shop_info.text }}</p>
+{% endblock %}
