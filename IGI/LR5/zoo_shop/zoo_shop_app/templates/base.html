@@ -1,72 +1,123 @@
 <!DOCTYPE html>
-{% load tz_detect %}
-<html>
+<html lang="ru">
+{% load i18n %}
+{% load static %}
 <head>
     <title>ZooShop</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Viktoria Artish">
+    <meta name="description" content="Online-service - pet shop.">
+    <link rel="shortcut icon" href="{% static 'icons/icon.png' %}" type="image/x-icon" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: black;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        header nav a:hover {
+            color: #ccc;
+        }
+
+        main {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
+    <header itemscope itemtype="https://schema.org/Organization">
+        <div class="logo" style="display: flex; align-items: center;">
+            <a href="{% url 'home' %}">
+                <img src="{% static 'icons/icon.png' %}" alt="ZooShop Logo" width="50" height="50" style="margin-right: 10px;" itemprop="logo">
+            </a>
+            <a href="{% url 'home' %}">
+                <p style="font-size: 24px; font-weight: bold; color: #ff66d1; margin: 0; margin-right: 10px" itemprop="name">ZooShop</p>
+            </a>
+        </div>
+        <nav>
+            <a href="{% url 'products' %}" itemprop="url">Товары</a>
+            {% if request.user.client %}
+                <a href="{% url 'cart_management' %}" itemprop="url">Корзина</a>
+            {% endif %}
+            <a href="{% url 'about' %}" itemprop="url">О компании</a>
+            <a href="{% url 'news' %}" itemprop="url">Новости</a>
+            {% if not request.user.is_superuser %}
+                <a href="{% url 'faq' %}" itemprop="url">Список часто задаваемых вопросов</a>
+            {% endif %}
+            <a href="{% url 'contacts' %}" itemprop="url">Контакты</a>
+            <a href="{% url 'privacy_policy' %}" itemprop="url">Политика конфиденциальности</a>
+            {% if not request.user.is_superuser %}
+                <a href="{% url 'promocodes' %}" itemprop="url">Промокоды</a>
+            {% endif %}
+            {% if request.user.employee or request.user.is_superuser %}
+                <a href="{% url 'suppliers' %}" itemprop="url">Информация о поставщиках</a>
+            {% endif %}
+            {% if request.user.is_superuser %}
+                <a href="{% url 'promocode_list' %}" itemprop="url">Промокоды</a>
+                <a href="{% url 'vacancy_list' %}" itemprop="url">Вакансии</a>
+                <a href="{% url 'orders' %}" itemprop="url">Список продаж</a>
+                <a href="{% url 'faq_list' %}" itemprop="url">Список часто задаваемых вопросов</a>
+                <a href="{% url 'sales_chart' %}" itemprop="url">Статистика</a>
+            {% endif %}
+            <a href="{% url 'reviews' %}" itemprop="url">Отзывы</a>
+            {% if not request.user.employee and not request.user.client and not request.user.is_superuser %}
+                <a href="{% url 'register' %}" itemprop="url">Зарегистрироваться</a>
+                <a href="{% url 'login' %}" itemprop="url">Войти</a>
+            {% endif %}
+            {% if request.user.employee or request.user.client or request.user.is_superuser %}
+                <a href="{% url 'cats_facts' %}" itemprop="url">Факты о котах</a>
+                <a href="{% url 'dogs_images' %}" itemprop="url">Фото собаки</a>
+                <a href="{% url 'logout' %}" itemprop="url">Выйти</a>
+            {% endif %}
+        </nav>
+    </header>
 
-    <nav>
-        <a href="{% url 'home' %}">Главная</a>
-
-        <a href="{% url 'products' %}">Товары</a>
-        {% if request.user.client %}
-            <a href="{% url 'cart_detail' %}">Корзина</a>
-        {% endif %}
-
-        <a href="{% url 'about' %}">О компании</a>
-        <a href="{% url 'news' %}">Новости</a>
-
-        {% if not request.user.is_superuser %}
-            <a href="{% url 'faq' %}">Список часто задаваемых вопросов</a>
-        {% endif %}
-
-        <a href="{% url 'contacts' %}">Контакты</a>
-        <a href="{% url 'privacy_policy' %}">Политика конфиденциальности</a>
-
-        {% if not request.user.is_superuser %}
-            <a href="{% url 'promocodes' %}">Промокоды</a>
-        {% endif %}
-
-
-        {% if request.user.employee or request.user.is_superuser %}
-            <a href="{% url 'suppliers' %}">Информация о поставщиках</a>
-        {% endif %}
-
-
-        {% if request.user.is_superuser %}
-            <a href="{% url 'promocode_list' %}">Промокоды</a>
-            <a href="{% url 'vacancy_list' %}">Вакансии</a>
-            <a href="{% url 'orders' %}">Список продаж</a>
-             <a href="{% url 'faq_list' %}">Список часто задаваемых вопросов</a>
-             <a href="{% url 'sales_chart' %}">Статистика</a>
-        {% endif %}
-
-
-        <a href="{% url 'reviews' %}">Отзывы</a>
-
-
-        {% if not request.user.employee and not request.user.client and not request.user.is_superuser %}
-            <a href="{% url 'register' %}">Зарегистрироваться</a>
-        {% endif %}
-
-
-        {% if not request.user.employee and not request.user.client and not request.user.is_superuser %}
-            <a href="{% url 'login' %}">Войти</a>
-        {% endif %}
-
-
-        {% if request.user.employee or request.user.client or request.user.is_superuser %}
-            <a href="{% url 'cats_facts' %}">Факты о котах</a>
-            <a href="{% url 'dogs_images' %}">Фото собаки</a>
-            <a href="{% url 'logout' %}">Выйти</a>
-        {% endif %}
-    </nav>
-    <div>
+    <main>
+        <!-- Основной контент -->
         {% block content %}
         {% endblock %}
-    </div>
-    It is {% now "jS F Y H:i" %}
-{#    {% tz_detect %}#}
+    </main>
+
+    <footer itemscope itemtype="https://schema.org/Organization">
+        <p>Контактный телефон: <span itemprop="telephone">+375 29 456-78-90</span></p>
+        <p>Адрес: <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+            <span itemprop="streetAddress">Улица Гикало, дом 9</span>,
+            <span itemprop="addressLocality">Минск</span>
+            <span itemprop="addressCountry">Беларусь</span>
+        </span></p>
+        {% now "j E Y H:i" %}
+    </footer>
 </body>
 </html>

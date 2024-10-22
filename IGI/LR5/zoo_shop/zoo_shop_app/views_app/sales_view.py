@@ -13,7 +13,7 @@ def create_order(request):
 
     if not cart_items.exists():
         logger.info("Cart is empty!")
-        return redirect('cart_detail')
+        return redirect('cart_management')
 
     applied_promo_code = None
 

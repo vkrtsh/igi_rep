@@ -1,25 +1,41 @@
 {% extends "base.html" %}
 
 {% block content %}
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    {{ promo_code_form.as_p }}
-    <button type="submit">Офрмить заказ</button>
-</form>
-     <p><form action="{% url 'cart_detail' %}" method="get">
-    <button type="submit">Вернуться к корзине</button>
-    </form></p>
+    <h1>Оформление заказа</h1>
 
-{% if applied_promo_code %}
-    <p>Applied promo code: {{ applied_promo_code.code }} with {{ applied_promo_code.discount }}% discount</p>
-{% endif %}
+    {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+                <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
 
-<h3>Cart Summary</h3>
-<ul>
-    {% for item in cart_summary %}
-        <li>{{ item.product.name }} x {{ item.quantity }} = {{ item.total_cost }}</li>
-    {% endfor %}
-</ul>
-<p>Total cost: {{ total_cost }}</p>
+    <form method="post">
+        {% csrf_token %}
+
+        <div>
+            <label for="id_address">Адрес:</label>
+            {{ address_form.address }}
+            {% if address_form.address.errors %}
+                <div class="error">{{ address_form.address.errors }}</div>
+            {% endif %}
+        </div>
+        <br>
+        <div>
+            <label for="id_promo_code">Введите промокод (необязательно):</label>
+            {{ promo_code_form.promo_code }}
+            {% if promo_code_form.promo_code.errors %}
+                <div class="error">{{ promo_code_form.promo_code.errors }}</div>
+            {% endif %}
+        </div>
+
+        <button type="submit">Оформить заказ</button>
+    </form>
+
+    <p>
+        <form action="{% url 'cart_management' %}" method="get">
+            <button type="submit">Вернуться к корзине</button>
+        </form>
+    </p>
 {% endblock %}

@@ -161,20 +161,20 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru-RU'
 
-TIME_ZONE = 'UTC'
+USE_I18N = True  # Включаем интернационализацию
+USE_L10N = True  # Включаем локализацию
+USE_TZ = True     # Используем временные зоны
 
-USE_I18N = True
-
-USE_TZ = True
-
+DEFAULT_CHARSET = 'utf-8'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = 'zoo_shop_app/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'zoo_shop_app', 'static')
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, '/static')
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field

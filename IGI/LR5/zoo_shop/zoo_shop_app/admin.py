@@ -110,6 +110,14 @@ class VacancyAdmin(admin.ModelAdmin):
     ordering = ('salary',)
 
 
+@admin.register(Partner)
+class PartnerAdmin(admin.ModelAdmin):
+    list_display = ('id', 'name', 'logo')
+    search_fields = ('name',)
+    ordering = ('name',)
+
+
+
 
 
 

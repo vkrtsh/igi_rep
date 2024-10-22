@@ -74,7 +74,7 @@ class PromocodeForm(django.forms.ModelForm):
 
 
 class AddToCartForm(django.forms.Form):
-    quantity = django.forms.IntegerField(min_value=1, max_value=10, initial=1)
+    quantity = django.forms.IntegerField(min_value=1, max_value=100, initial=1)
 
 
 class AddressForm(django.forms.Form):
@@ -83,6 +83,14 @@ class AddressForm(django.forms.Form):
 
 class PromoCodeForm(django.forms.Form):
     promo_code = django.forms.CharField(max_length=10, required=False)
+
+    def clean_promo_code(self):
+        promo_code = self.cleaned_data.get('promo_code')
+
+        if promo_code:
+            if not Promocode.objects.filter(code=promo_code, archived=False).exists():
+                raise django.forms.ValidationError("Промокод недействителен или не существует.")
+        return promo_code
 
 
 class FAQForm(django.forms.ModelForm):

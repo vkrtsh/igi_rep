@@ -1,7 +1,173 @@
-{% extends 'base.html' %}
-
+{% extends "base.html" %}
+{% load static %}
 {% block content %}
-<h1>О компании</h1>
-<img src="{{ shop_info.image.url }}" alt="Логотип компании">
-<p>{{ shop_info.text }}</p>
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="#about">О компании</a></li>
+            <li><a href="#history">История</a></li>
+            <li><a href="#certificate">Сертификаты</a></li>
+            <li><a href="#details">Реквизиты</a></li>
+            <li><a href="#video">Видео</a></li>
+            <li><a href="#feedback">Связь с нами</a></li>
+            <li><a href="#poem">Четверостишие о животных</a></li>
+            <li><a href="#sounds">Звуки природы</a></li>
+            <li><a href="#map">Наше местоположение</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <header>
+            <h3 style="margin: 5px;">О нашем зоомагазине</h3>
+        </header>
+        <article>
+            <br>
+            <p>Наш <abbr title="зоологический магазин">зоомагазин</abbr> предоставляет широкий ассортимент товаров для домашних животных, начиная с кормов и заканчивая игрушками и аксессуарами.</p>
+        </article>
+    </section>
+
+    <section>
+        <figure>
+            <img src="{% static "icons/icon.png" %}" alt="Логотип Зоомагазина" width="200" height="200" loading="lazy">
+            <figcaption>Логотип нашего зоомагазина</figcaption>
+        </figure>
+    </section>
+
+    <section id="history">
+        <header>
+            <h3 style="margin: 5px">История компании</h3>
+        </header>
+        <ul>
+            <li><time datetime="2010">2010</time> — Открытие первого зоомагазина</li>
+            <li><time datetime="2015">2015</time> — Открытие интернет-магазина</li>
+            <li><time datetime="2020">2020</time> — Получение международного сертификата качества</li>
+        </ul>
+    </section>
+
+      <section id="certificate">
+        <header>
+            <h3 style="margin: 5px">Сертификаты</h3>
+        </header>
+        <blockquote cite="https://zooshop.com/certificate">
+            «Зоомагазин соответствует международным стандартам качества.»
+        </blockquote>
+        <a href="{% url 'download_certificate' %}" class="button">Скачать сертификат PDF</a>
+    </section>
+    <br>
+
+
+    <section id="details">
+    <header>
+        <h3 style="margin: 5px">Реквизиты компании</h3>
+    </header>
+    <br>
+    <table border="1px">
+        <thead>
+            <tr>
+                <th scope="col" colspan="2" id="header1">Информация о компании</th>
+            </tr>
+            <tr>
+                <th scope="col" id="header2">Наименование</th>
+                <th scope="col" id="header3">Значение</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td headers="header2">ИНН</td>
+                <td headers="header3">1234567890</td>
+            </tr>
+            <tr>
+                <td headers="header2">ОГРН</td>
+                <td headers="header3">1097746389843</td>
+            </tr>
+            <tr>
+                <td headers="header2">Банк</td>
+                <td headers="header3">АО "Банк"</td>
+            </tr>
+            <tr>
+                <td headers="header2" colspan="2">Дополнительная информация</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    </section>
+
+    <section id="video">
+        <header>
+            <h3 style="margin: 5px">Фильм о дикой природе</h3>
+        </header>
+        <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/IBcwhaYP6Uk"
+                title="Фильм о дикой природе" frameborder="0" allowfullscreen></iframe>
+        <br>
+        <embed src="https://www.youtube.com/v/IBcwhaYP6Uk" type="application/x-shockwave-flash"
+                width="560" height="315" allowfullscreen="true">
+
+        <br>
+        <object width="560" height="349" data="https://www.youtube.com/v/IBcwhaYP6Uk"
+                type="application/x-shockwave-flash"> <param name="allowFullScreen" value="true">
+
+ </object>
+    </section>
+    <br>
+
+    <section id="feedback">
+        <header>
+            <h3 style="margin: 5px">Свяжитесь с нами</h3>
+        </header>
+        <br>
+        <form action="/submit" method="POST">
+            <div>
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <div>
+                <button type="submit">Отправить</button>
+            </div>
+            <br>
+        </form>
+    </section>
+
+    <section id="poem">
+        <header>
+            <h3 style="margin: 5px">Четверостишие о животных</h3>
+        </header>
+        <pre>
+            Животных любим с давних лет,
+            Забота наша - их ответ.
+            Здоровье, радость им несём,
+            В наш зоомагазин идём.
+        </pre>
+    </section>
+
+    <section id="sounds">
+        <header>
+            <h3 style="margin: 5px">Прослушайте наш подкаст о питомцах</h3>
+        </header>
+
+        <br>
+        <audio controls>
+            <source src="{% static 'audio/4b243785232586e.mp3' %}" type="audio/mpeg">
+        </audio>
+    </section>
+    <br>
+
+    <section id="map">
+    <header>
+        <h3 style="margin: 5px">Наше местоположение</h3>
+    </header>
+
+    <br>
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2349.019863032375!2d27.59235631592844!3d53.91184487992324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfaefc7ace77%3A0x108d2d965ec4df2f!2z0YPQuy4g0JPQuNC60LDQu9C-IDksINCc0LjQvdGB0LosINCc0LjQvdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCDQkdC10LvQsNGA0YPRgdGM!5e0!3m2!1sru!2sby!4v1697986218891!5m2!1sru!2sby"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
 {% endblock %}

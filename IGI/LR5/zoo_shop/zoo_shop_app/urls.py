@@ -9,7 +9,7 @@ from zoo_shop_app.views_app.suppliers_view import suppliers
 from zoo_shop_app.views_app.account_view import register, login, logout
 from zoo_shop_app.views_app.api_views import facts_about_cats, images_dogs
 from zoo_shop_app.views_app.news_view import news, article_detail
-from zoo_shop_app.views_app.products_view import products
+from zoo_shop_app.views_app.products_view import *
 from zoo_shop_app.views_app.review_view import reviews, add_review
 from zoo_shop_app.views_app.vacancies_view import *
 from zoo_shop_app.views_app.shopping_cart import *
@@ -18,6 +18,7 @@ from zoo_shop_app.views_app.faq_view import *
 from zoo_shop_app.views_app.orders_view import orders
 from zoo_shop_app.views_app.static_view import sales_chart
 from django.urls import re_path
+from zoo_shop_app.views_app.download_certificate import download_certificate
 
 
 urlpatterns = [
@@ -32,7 +33,10 @@ urlpatterns = [
     re_path(r'^privacy_policy/$', privacy_policy, name='privacy_policy'),
     re_path(r'^reviews/$', reviews, name='reviews'),
     re_path(r'^add_review/$', add_review, name='add_review'),
+
     re_path(r'^products/$', products, name='products'),
+    path('product/<int:product_id>/', product_detail, name='product_detail'),
+
     re_path(r'^promocodes/$', promocodes, name='promocodes'),
     re_path(r'^register/$', register, name='register'),
     re_path(r'^login/$', login, name='login'),
@@ -42,10 +46,12 @@ urlpatterns = [
     re_path(r'^dogs_images/$', images_dogs, name='dogs_images'),
 
     path('add-to-cart/<int:product_id>/', add_to_cart, name='add_to_cart'),
-    re_path(r'^cart/$', cart_detail, name='cart_detail'),
+    re_path(r'^cart/$', cart_management, name='cart_management'),
     re_path(r'^clear-cart/$', clear_cart, name='clear_cart'),
+    path('remove_from_cart/<int:item_id>/', remove_from_cart, name='remove_from_cart'),
     re_path(r'^order/create/$', create_order, name='create_order'),
     path('order/confirmation/<int:order_id>/', order_confirmation, name='order_confirmation'),
+    path('update_cart/<int:item_id>/', update_cart, name='update_cart'),
 
     re_path(r'^orders/$', orders, name='orders'),
     re_path(r'^sales_chart/$', sales_chart, name='sales_chart'),
@@ -69,5 +75,8 @@ urlpatterns = [
     path('promocodes/<int:promocode_id>/', promocode_detail, name='promocode_detail'),
     path('promocodes/<int:promocode_id>/update/', promocode_update, name='promocode_update'),
     path('promocodes/<int:promocode_id>/delete/', promocode_delete, name='promocode_delete'),
+
+
+    re_path(r'^download_certificate/$', download_certificate, name='download_certificate'),
 
 ]

@@ -2,7 +2,8 @@ from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import User
 from django.core.validators import MinValueValidator, MaxValueValidator
-import datetime, random
+import datetime
+import random
 
 
 class Base(models.Model):
@@ -16,7 +17,7 @@ class Base(models.Model):
 
 class AboutShop(Base):
     text = models.TextField('Shop description')
-    image = models.ImageField()
+    image = models.ImageField(upload_to='static/main/')
 
     def __str__(self):
         return f'{self.id}'
@@ -42,7 +43,7 @@ class Client(Base):
     birth_date = models.DateField(
         validators=[MaxValueValidator(datetime.date.today() - datetime.timedelta(days=18 * 365),
                                       message="You must be at least 18 years old to register")], null=True)
-    photo = models.ImageField(default='zoo_shop_app/static/main/user.png')
+    photo = models.ImageField(upload_to='static/clients/', default='static/main/user.png')
     email = models.EmailField(max_length=50, unique=True)
     phone = models.CharField(max_length=13, unique=True)
     password = models.CharField(max_length=50, default="")
@@ -65,12 +66,12 @@ class Employee(Base):
     phone = models.CharField(max_length=13, unique=True)
     position = models.CharField(max_length=50)
     salary = models.DecimalField(max_digits=10, decimal_places=2)
-    photo = models.ImageField(default='zoo_shop_app/static/main/user.png')
+    photo = models.ImageField(upload_to='static/employees/', default='static/main/user.png')
     password = models.CharField(max_length=50, default="")
 
     def __str__(self):
-        return (f'{self.id} {self.name} {self.email} {self.phone} \
-               {self.position} {self.salary} {self.photo} {self.password}')
+        return (f'{self.id} {self.name} {self.email} {self.phone} '
+                f'{self.position} {self.salary}')
 
     class Meta:
         ordering = ['name']
@@ -96,7 +97,7 @@ class Product(Base):
     name = models.CharField(max_length=100)
     supplier = models.ForeignKey(Supplier, on_delete=models.CASCADE)
     price = models.DecimalField(max_digits=10, decimal_places=2)
-    image = models.ImageField(default='zoo_shop_app/static/main/empty.jpg')
+    image = models.ImageField(upload_to='static/products/', default='static/main/empty.jpg')
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
 
     def __str__(self):
@@ -136,7 +137,7 @@ class FAQ(Base):
 class News(Base):
     title = models.CharField(max_length=100)
     text = models.TextField(max_length=1000)
-    image = models.ImageField(default='zoo_shop_app/static/main/news.png')
+    image = models.ImageField(upload_to='static/news/', default='static/main/news.png')
 
     def __str__(self):
         return f'{self.id} {self.title} {self.text} {self.image}'
@@ -229,3 +230,17 @@ class Vacancy(Base):
     class Meta:
         ordering = ['salary']
         db_table = 'vacancies'
+
+
+class Partner(Base):
+    name = models.CharField(max_length=100, unique=True)
+    logo = models.ImageField(upload_to='static/partners/')
+    website = models.URLField(max_length=200)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        db_table = 'partners'
+        ordering = ['name']
+
