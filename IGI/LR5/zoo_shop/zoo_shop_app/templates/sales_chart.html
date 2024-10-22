@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Total Sales by Client</h1>
+    <div>
+        <img src="data:image/png;base64,{{ graph }}" alt="Sales Chart">
+    </div>
+    <div>
+        <h2>Clients</h2>
+        <ul>
+            {% for client, sales in client_sales.items %}
+                <li>{{ client }}: ${{ sales }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}

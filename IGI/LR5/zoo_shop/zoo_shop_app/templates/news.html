@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% load custom_filters %}
+
+{% block content %}
+  <h1>Новости</h1>
+  <ul>
+    {% for article in articles %}
+      <li>
+        <img src="{{ article.image.url }}" alt="{{ article.title }}" height="250" width="300">
+        <h2>{{ article.title }}</h2>
+        <p>{{ article.text|truncate_to_first_sentence }}</p>
+        <button>  <a href="{% url 'article_detail' article.id %}">Читать далее</a></button>
+      </li>
+    {% empty %}
+      <li>Нет новостей</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

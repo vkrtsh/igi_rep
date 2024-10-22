@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Контакты</h1>
+<ul>
+    {% for employee in employees %}
+        <li>
+            <img src="{{ employee.photo.url }}" alt="{{ employee.name }}" height="250" width="300">
+            <br>
+            <strong>{{ employee.name }}</strong> (<em>{{ employee.position }}</em>)
+            <br>
+            <span>Зарплата: <strong>{{ employee.salary }} руб.</strong></span>
+            <br>
+            <span>Телефон: <strong>{{ employee.phone }}</strong></span>
+            <br>
+            <span>Email: <strong><a href="mailto:{{ employee.email }}">{{ employee.email }}</a></strong></span>
+        </li>
+        <br>
+    {% empty %}
+        <li>Контакты не найдены</li>
+    {% endfor %}
+</ul>
+{% endblock %}

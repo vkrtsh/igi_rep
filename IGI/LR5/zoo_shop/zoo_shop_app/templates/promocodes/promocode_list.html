@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Список промокодов</h1>
+  <a href="{% url 'promocode_create' %}">Добавить промокод</a>
+  <ul>
+    {% for promocode in promocodes %}
+      <li>
+        <a href="{% url 'promocode_detail' promocode.id %}">{{ promocode.code }}</a> - {{ promocode.discount }}%
+        <a href="{% url 'promocode_update' promocode.id %}">Редактировать</a>
+        <a href="{% url 'promocode_delete' promocode.id %}">Удалить</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}

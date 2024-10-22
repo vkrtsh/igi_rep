@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div style="text-align: center;">
+
+    <div>
+        <img style="margin-right: 50px;" src="{% static 'banners/banner2.jpg' %}" alt="Реклама 1" width="600">
+        <img src="{% static 'banners/banner1.jpg' %}" alt="Реклама 2" width="600">
+    </div>
+
+    <br>
+    <br>
+
+    <div>
+    <h2>{{ latest_article.title }}</h2>
+    <p>{{ latest_article.text|truncatewords:30 }}</p>
+    <button><a href="{% url 'article_detail' latest_article.id %}">Читать далее</a></button>
+    </div>
+    <img src="{{ latest_article.image.url }}" alt="{{ latest_article.title }}" width="600">
+
+    <h2>Наши партнеры</h2>
+    <ul style="list-style-type: none; padding: 0;">
+        {% for partner in partners %}
+            <li style="display: inline-block; margin: 10px;">
+                <a href="{{ partner.website }}" target="_blank">
+                    <img src="{{ partner.logo.url }}" alt="{{ partner.name }}" style="max-width: 150px; height: auto;">
+                </a>
+            </li>
+        {% empty %}
+            <li>Нет партнеров для отображения.</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

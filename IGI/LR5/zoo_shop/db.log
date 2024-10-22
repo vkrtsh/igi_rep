@@ -1,0 +1,451 @@
+2024-05-29 06:12:09,792 Logout successfully.
+2024-05-29 06:12:14,442 LoginForm is valid.
+2024-05-29 06:12:14,793 Login user success.
+2024-05-29 06:15:19,710 VacancyForm is valid.
+2024-05-29 06:15:19,711 Vacancy has been successful updated.
+2024-05-29 06:17:32,738 Logout successfully.
+2024-05-29 06:18:29,716 UserRegistrationForm and ProfileRegistrationForm are valid.
+2024-05-29 06:18:30,094 User created.
+2024-05-29 06:18:36,732 LoginForm is valid.
+2024-05-29 06:18:37,068 Login user success.
+2024-05-29 06:18:39,776 Logout successfully.
+2024-05-29 06:18:45,034 LoginForm is valid.
+2024-05-29 06:18:45,371 Login user success.
+2024-05-29 06:18:57,992 Logout successfully.
+2024-05-29 06:24:51,502 UserRegistrationForm or ProfileRegistrationForm aren't valid.
+2024-05-29 06:25:17,695 UserRegistrationForm and ProfileRegistrationForm are valid.
+2024-05-29 06:25:18,043 User created.
+2024-05-29 06:27:27,642 UserRegistrationForm or ProfileRegistrationForm aren't valid.
+2024-05-29 06:28:07,711 UserRegistrationForm or ProfileRegistrationForm aren't valid.
+2024-05-29 06:28:27,105 UserRegistrationForm or ProfileRegistrationForm aren't valid.
+2024-05-29 06:28:46,046 UserRegistrationForm or ProfileRegistrationForm aren't valid.
+2024-05-29 06:28:51,340 Logout successfully.
+2024-05-29 06:29:00,610 LoginForm is valid.
+2024-05-29 06:29:01,184 Login user success.
+2024-05-29 06:29:03,573 Logout successfully.
+2024-05-29 06:29:16,709 LoginForm is valid.
+2024-05-29 06:29:17,064 Login user success.
+2024-05-29 11:02:34,713 Logout successfully.
+2024-05-29 11:02:36,758 LoginForm is valid.
+2024-05-29 11:02:37,145 Login user success.
+2024-05-29 11:02:44,073 AddToCartForm is valid.
+2024-05-29 11:04:57,687 AddressForm is valid.
+2024-05-29 11:05:35,767 AddressForm is valid.
+2024-05-29 11:06:34,258 AddressForm is valid.
+2024-05-29 11:08:46,495 AddressForm is valid.
+2024-05-29 11:08:50,602 AddressForm is valid.
+2024-05-29 11:09:48,146 Logout successfully.
+2024-05-29 11:10:01,864 LoginForm is valid.
+2024-05-29 11:10:03,030 Login user success.
+2024-05-29 11:10:10,000 AddToCartForm is valid.
+2024-05-29 11:15:22,693 AddressForm is valid.
+2024-05-29 11:18:53,005 AddressForm is valid.
+2024-05-29 11:24:46,654 AddressForm is valid.
+2024-05-29 11:32:23,131 Logout successfully.
+2024-05-29 12:17:32,849 LoginForm is valid.
+2024-05-29 12:17:34,011 Login user success.
+2024-05-29 12:21:24,976 Logout successfully.
+2024-05-29 12:23:03,214 LoginForm is valid.
+2024-05-29 12:23:04,382 Login user success.
+2024-05-29 12:23:47,263 Logout successfully.
+2024-05-29 12:23:53,306 LoginForm is valid.
+2024-05-29 12:23:54,414 Login user success.
+2024-05-29 12:23:59,873 Logout successfully.
+2024-05-29 12:24:03,513 LoginForm is valid.
+2024-05-29 12:24:04,663 Login user success.
+2024-05-29 12:25:17,223 Cart is empty!
+2024-05-29 12:25:22,949 AddToCartForm is valid.
+2024-05-29 12:25:26,505 AddressForm is valid.
+2024-05-29 12:26:06,285 Logout successfully.
+2024-05-29 12:26:17,713 LoginForm is valid.
+2024-05-29 12:26:19,021 Login user success.
+2024-05-29 12:30:56,351 Logout successfully.
+2024-05-29 12:54:39,649 LoginForm is valid.
+2024-05-29 12:54:40,825 Login user success.
+2024-05-29 12:54:46,427 AddToCartForm is valid.
+2024-05-29 12:55:08,905 AddressForm is valid.
+2024-05-29 12:55:18,690 AddToCartForm is valid.
+2024-05-29 12:55:29,764 AddressForm is valid.
+2024-05-29 12:55:29,765 Promo code 'sales' applied with discount 50%.
+2024-05-29 12:55:37,541 AddressForm is valid.
+2024-05-29 12:55:46,318 AddToCartForm is valid.
+2024-05-29 12:56:06,337 AddressForm is valid.
+2024-05-29 12:56:12,523 AddToCartForm is valid.
+2024-05-29 12:56:19,948 AddressForm is valid.
+2024-05-29 12:56:19,949 Promo code '50' does not exist.
+2024-05-29 12:56:54,348 AddToCartForm is valid.
+2024-05-29 12:57:02,774 AddressForm is valid.
+2024-05-29 12:58:02,522 AddToCartForm is valid.
+2024-05-29 12:58:22,769 AddressForm is valid.
+2024-05-29 13:03:21,749 AddToCartForm is valid.
+2024-05-29 13:03:33,550 AddressForm is valid.
+2024-05-29 13:03:33,551 Promo code 'sales' applied with discount 50%.
+2024-05-29 13:09:19,382 AddressForm is valid.
+2024-05-29 13:09:19,390 Promo code 'sales' applied with discount 50%.
+2024-05-29 13:09:23,293 AddressForm is valid.
+2024-05-29 13:09:23,295 Promo code 'sales' applied with discount 50%.
+2024-05-29 13:09:45,825 AddressForm is valid.
+2024-05-29 13:09:45,825 Promo code 'sales' applied with discount 50%.
+2024-05-29 13:11:10,097 AddressForm is valid.
+2024-05-29 13:11:10,105 Promo code 'sales' applied with discount 50%.
+2024-05-29 13:11:26,454 AddressForm is valid.
+2024-05-29 13:11:26,454 Promo code 'sales' applied with discount 50%.
+2024-05-29 13:13:22,141 AddressForm is valid.
+2024-05-29 13:13:22,142 Promo code 'sales' applied with discount 50%.
+2024-05-29 13:16:42,515 Forms are valid.
+2024-05-29 13:16:55,309 Forms are valid.
+2024-05-29 13:18:48,883 Forms are valid.
+2024-05-29 13:18:48,900 Promo code 'sales' applied with discount 50%.
+2024-05-29 13:20:07,993 Logout successfully.
+2024-05-29 13:31:01,670 LoginForm is valid.
+2024-05-29 13:31:02,797 Login user success.
+2024-05-29 13:31:14,434 Logout successfully.
+2024-05-29 13:31:49,328 LoginForm is valid.
+2024-05-29 13:31:49,735 Login user success.
+2024-05-29 13:31:51,992 Logout successfully.
+2024-05-29 13:31:55,634 LoginForm is valid.
+2024-05-29 13:31:56,820 Login user success.
+2024-05-29 13:36:38,459 Logout successfully.
+2024-05-29 13:39:53,836 LoginForm is valid.
+2024-05-29 13:39:54,245 Login user success.
+2024-05-29 13:40:04,956 ReviewForm is not valid.
+2024-05-29 13:40:39,141 ReviewForm is not valid.
+2024-05-29 13:40:42,689 Logout successfully.
+2024-05-29 13:40:56,426 LoginForm is valid.
+2024-05-29 13:40:57,587 Login user success.
+2024-05-29 13:40:57,608 LoginForm is valid.
+2024-05-29 13:40:58,777 Login user success.
+2024-05-29 13:41:05,787 AddToCartForm is valid.
+2024-05-29 13:41:14,800 Forms are valid.
+2024-05-29 13:41:14,800 Promo code 'fhsdfhishf' does not exist.
+2024-05-29 13:41:16,625 Forms are valid.
+2024-05-29 13:41:16,626 Promo code 'fhsdfhishf' does not exist.
+2024-05-29 13:41:17,670 Forms are valid.
+2024-05-29 13:41:17,671 Promo code 'fhsdfhishf' does not exist.
+2024-05-29 13:41:18,212 Forms are valid.
+2024-05-29 13:41:18,213 Promo code 'fhsdfhishf' does not exist.
+2024-05-29 13:41:18,518 Forms are valid.
+2024-05-29 13:41:18,520 Promo code 'fhsdfhishf' does not exist.
+2024-05-29 13:41:18,852 Forms are valid.
+2024-05-29 13:41:18,854 Promo code 'fhsdfhishf' does not exist.
+2024-05-29 13:43:01,505 Forms are valid.
+2024-05-29 13:43:01,505 Promo code 'fhsdfhishf' does not exist.
+2024-05-29 13:46:36,914 Logout successfully.
+2024-05-29 14:18:30,678 LoginForm is valid.
+2024-05-29 14:18:31,809 Login user success.
+2024-05-29 14:19:01,647 AddToCartForm is valid.
+2024-05-29 14:19:10,613 Forms are valid.
+2024-05-29 14:19:10,614 Promo code 'sa' does not exist.
+2024-05-29 14:19:15,114 Forms are valid.
+2024-05-29 14:19:15,149 Promo code 'sales' applied with discount 50%.
+2024-05-29 14:19:18,885 Logout successfully.
+2024-05-29 14:19:24,006 LoginForm is valid.
+2024-05-29 14:19:25,168 Login user success.
+2024-05-29 14:23:35,920 Vacancy has been successful deleted.
+2024-05-29 15:47:59,650 Logout successfully.
+2024-05-29 15:49:30,346 LoginForm is valid.
+2024-05-29 15:49:31,564 Login user success.
+<<<<<<< HEAD
+2024-09-18 18:47:40,996 LoginForm is valid.
+2024-09-18 18:47:42,074 Login user success.
+=======
+>>>>>>> igi-lr5
+2024-10-07 01:10:27,682 LoginForm is valid.
+2024-10-07 01:10:28,783 Login user success.
+2024-10-07 01:15:24,400 AddToCartForm is valid.
+2024-10-07 01:16:13,246 Logout successfully.
+2024-10-07 01:16:16,439 LoginForm is valid.
+2024-10-07 01:16:17,008 Login user success.
+2024-10-07 01:27:23,104 Logout successfully.
+2024-10-07 01:27:28,220 LoginForm is valid.
+2024-10-07 01:27:40,160 LoginForm is valid.
+2024-10-07 01:27:40,493 Login user success.
+2024-10-07 01:27:46,347 Logout successfully.
+2024-10-07 01:27:55,230 LoginForm is valid.
+2024-10-07 01:27:55,568 Login user success.
+2024-10-07 01:28:08,101 Logout successfully.
+2024-10-07 01:28:15,868 LoginForm is valid.
+2024-10-07 01:28:16,207 Login user success.
+2024-10-07 01:28:30,526 Logout successfully.
+2024-10-07 01:30:12,192 LoginForm is valid.
+2024-10-07 01:30:12,557 Login user success.
+2024-10-07 01:44:19,298 LoginForm is valid.
+2024-10-07 01:44:19,638 Login user success.
+2024-10-07 02:07:48,928 Logout successfully.
+2024-10-21 14:52:56,042 LoginForm is valid.
+2024-10-21 14:52:56,392 Login user success.
+2024-10-21 14:53:03,971 Logout successfully.
+2024-10-21 15:14:24,744 LoginForm is valid.
+2024-10-21 15:14:25,074 Login user success.
+2024-10-21 15:15:17,122 Logout successfully.
+2024-10-21 15:23:03,224 Logout successfully.
+2024-10-21 17:55:17,899 Logout successfully.
+2024-10-21 17:55:24,315 LoginForm is valid.
+2024-10-21 17:55:25,484 Login user success.
+2024-10-21 17:55:28,255 Logout successfully.
+2024-10-21 18:14:30,908 Logout successfully.
+2024-10-21 18:14:40,185 LoginForm is valid.
+2024-10-21 18:14:40,557 Login user success.
+2024-10-21 18:24:24,880 Logout successfully.
+2024-10-21 18:34:38,361 LoginForm is valid.
+2024-10-21 18:34:39,376 Login user success.
+2024-10-21 18:35:01,677 Logout successfully.
+2024-10-21 18:35:03,375 LoginForm is valid.
+2024-10-21 18:35:04,545 Login user success.
+2024-10-21 18:35:06,577 Logout successfully.
+2024-10-22 01:44:23,969 LoginForm is valid.
+2024-10-22 01:44:24,307 Login user success.
+2024-10-22 01:46:38,332 Logout successfully.
+2024-10-22 02:07:26,945 LoginForm is valid.
+2024-10-22 02:07:37,169 LoginForm is valid.
+2024-10-22 02:07:37,510 Login user success.
+2024-10-22 02:07:50,861 Logout successfully.
+2024-10-22 02:07:57,668 LoginForm is valid.
+2024-10-22 02:07:58,012 Login user success.
+2024-10-22 02:09:39,611 Logout successfully.
+2024-10-22 02:09:44,263 LoginForm is valid.
+2024-10-22 02:09:44,602 Login user success.
+2024-10-22 02:11:19,938 ReviewForm is not valid.
+2024-10-22 02:11:24,348 ReviewForm is valid.
+2024-10-22 02:11:24,353 Review has been successful added.
+2024-10-22 02:11:33,619 Logout successfully.
+2024-10-22 02:20:14,795 LoginForm is valid.
+2024-10-22 02:20:15,237 Login user success.
+2024-10-22 02:23:10,652 Logout successfully.
+2024-10-22 02:23:15,361 LoginForm is valid.
+2024-10-22 02:23:15,703 Login user success.
+2024-10-22 02:23:54,046 PromocodeForm is valid.
+2024-10-22 02:23:54,049 Promocode has been successful added.
+2024-10-22 02:23:57,532 Logout successfully.
+2024-10-22 02:24:01,009 LoginForm is valid.
+2024-10-22 02:24:01,342 Login user success.
+2024-10-22 02:24:03,008 Logout successfully.
+2024-10-22 02:24:10,200 LoginForm is valid.
+2024-10-22 02:24:10,531 Login user success.
+2024-10-22 02:25:28,232 Cart is empty!
+2024-10-22 02:25:34,515 AddToCartForm is valid.
+2024-10-22 02:26:01,715 Forms are valid.
+2024-10-22 02:26:01,729 Promo code 'zoobazar20' applied with discount 20%.
+2024-10-22 02:26:16,835 Logout successfully.
+2024-10-22 02:26:22,088 LoginForm is valid.
+2024-10-22 02:26:22,423 Login user success.
+2024-10-22 02:27:21,963 Logout successfully.
+2024-10-22 03:47:25,493 Logout successfully.
+2024-10-22 03:48:17,066 LoginForm is valid.
+2024-10-22 03:48:17,407 Login user success.
+2024-10-22 03:48:35,990 AddToCartForm is valid.
+2024-10-22 04:01:15,611 Cart is empty!
+2024-10-22 04:01:41,987 Cart is empty!
+2024-10-22 04:01:50,166 AddToCartForm is valid.
+2024-10-22 04:01:53,648 Cart is empty!
+2024-10-22 04:02:00,436 AddToCartForm is valid.
+2024-10-22 04:02:11,942 AddToCartForm is valid.
+2024-10-22 04:02:20,031 AddToCartForm is valid.
+2024-10-22 04:02:24,605 Cart is empty!
+2024-10-22 04:02:29,694 AddToCartForm is valid.
+2024-10-22 04:03:06,383 Forms are valid.
+2024-10-22 04:03:06,384 Promo code '' does not exist.
+2024-10-22 04:03:09,225 Forms are valid.
+2024-10-22 04:03:09,226 Promo code '' does not exist.
+2024-10-22 04:03:13,726 Forms are valid.
+2024-10-22 04:03:13,727 Promo code 'hj' does not exist.
+2024-10-22 04:03:25,963 Forms are valid.
+2024-10-22 04:03:25,977 Promo code 'zoobazar20' applied with discount 20%.
+2024-10-22 04:03:31,880 AddToCartForm is valid.
+2024-10-22 04:08:28,682 AddToCartForm is valid.
+2024-10-22 04:08:36,640 AddToCartForm is valid.
+2024-10-22 04:13:47,763 Cart is empty!
+2024-10-22 04:13:48,905 Cart is empty!
+2024-10-22 04:13:50,060 Cart is empty!
+2024-10-22 04:13:56,092 AddToCartForm is valid.
+2024-10-22 04:13:59,574 Cart is empty!
+2024-10-22 04:14:05,285 AddToCartForm is valid.
+2024-10-22 04:14:11,777 AddToCartForm is valid.
+2024-10-22 04:14:17,066 Cart is empty!
+2024-10-22 04:14:22,691 AddToCartForm is valid.
+2024-10-22 04:14:29,542 Forms are valid.
+2024-10-22 04:14:29,543 Promo code '' does not exist.
+2024-10-22 04:14:59,541 Forms are valid.
+2024-10-22 04:14:59,554 Promo code 'zoobazar20' applied with discount 20%.
+2024-10-22 04:17:09,137 AddToCartForm is valid.
+2024-10-22 04:17:14,680 Updated quantity for item Gosbi, сухой корм для кошек, 12 кг to 565251025.
+2024-10-22 04:17:38,937 Updated quantity for item Gosbi, сухой корм для кошек, 12 кг to 2.
+2024-10-22 04:18:17,848 Updated quantity for item Gosbi, сухой корм для кошек, 12 кг to 2.
+2024-10-22 04:22:56,093 Updated quantity for item Gosbi, сухой корм для кошек, 12 кг to 2.
+2024-10-22 04:22:59,482 Updated quantity for item Gosbi, сухой корм для кошек, 12 кг to 3.
+2024-10-22 04:23:10,719 AddToCartForm is valid.
+2024-10-22 04:23:13,914 Updated quantity for item Игрушка для собак Забавный кролик to 6.
+2024-10-22 04:23:19,003 Updated quantity for item Gosbi, сухой корм для кошек, 12 кг to 1.
+2024-10-22 04:25:46,169 Updated quantity for item Игрушка для собак Забавный кролик to 2.
+2024-10-22 04:25:53,126 AddToCartForm is valid.
+2024-10-22 04:25:56,032 Updated quantity for item Миска керамическая Цветные полоски/лапки to 5.
+2024-10-22 04:25:58,137 Updated quantity for item Игрушка для собак Забавный кролик to 2.
+2024-10-22 04:25:59,725 Updated quantity for item Игрушка для собак Забавный кролик to 2.
+2024-10-22 04:26:01,120 Updated quantity for item Игрушка для собак Забавный кролик to 1.
+2024-10-22 04:26:16,007 Updated quantity for item Миска керамическая Цветные полоски/лапки to 5452252.
+2024-10-22 04:28:26,878 AddToCartForm is valid.
+2024-10-22 04:28:38,792 Updated quantity for item Миска керамическая Цветные полоски/лапки to 5.
+2024-10-22 04:28:56,487 Cart is empty!
+2024-10-22 04:28:59,378 AddToCartForm is valid.
+2024-10-22 04:29:20,174 Cart is empty!
+2024-10-22 04:29:26,796 AddToCartForm is valid.
+2024-10-22 04:29:31,480 Updated quantity for item Игрушка для собак Забавный кролик to 6.
+2024-10-22 04:30:14,544 AddToCartForm is valid.
+2024-10-22 04:30:23,082 Updated quantity for item Gosbi, сухой корм для кошек, 12 кг to 100.
+2024-10-22 04:31:18,345 Forms are valid.
+2024-10-22 04:31:18,358 Promo code 'zoobazar20' applied with discount 20%.
+2024-10-22 04:48:33,435 AddToCartForm is not valid.
+2024-10-22 04:48:37,497 AddToCartForm is valid.
+2024-10-22 04:54:47,038 AddToCartForm is not valid.
+2024-10-22 04:54:53,020 AddToCartForm is valid.
+2024-10-22 04:55:32,146 AddToCartForm is not valid.
+2024-10-22 04:55:34,798 AddToCartForm is valid.
+2024-10-22 04:56:34,172 Forms are valid.
+2024-10-22 04:56:34,187 Promo code 'zoobazar20' applied with discount 20%.
+2024-10-22 05:03:52,623 AddToCartForm is not valid.
+2024-10-22 05:03:54,665 AddToCartForm is valid.
+2024-10-22 05:05:45,614 Cart is empty!
+2024-10-22 05:05:48,559 AddToCartForm is not valid.
+2024-10-22 05:06:27,131 AddToCartForm is not valid.
+2024-10-22 05:06:29,028 AddToCartForm is valid.
+2024-10-22 05:06:32,894 Updated quantity for item Gosbi, сухой корм для кошек, 12 кг to 3.
+2024-10-22 05:06:34,125 Updated quantity for item Gosbi, сухой корм для кошек, 12 кг to 2.
+2024-10-22 05:07:13,226 Forms are valid.
+2024-10-22 05:07:13,229 Promo code 'swdefcrvgb' does not exist.
+2024-10-22 05:07:14,526 Forms are valid.
+2024-10-22 05:07:14,527 Promo code 'swdefcrvgb' does not exist.
+2024-10-22 05:07:22,179 Forms are valid.
+2024-10-22 05:07:22,180 Promo code 'swdefcrvgb' does not exist.
+2024-10-22 05:07:32,681 Forms are valid.
+2024-10-22 05:07:32,693 Promo code 'zoobazar20' applied with discount 20%.
+2024-10-22 05:07:35,736 AddToCartForm is not valid.
+2024-10-22 05:07:37,554 AddToCartForm is valid.
+2024-10-22 05:07:45,045 Forms are valid.
+2024-10-22 05:07:45,047 Promo code '' does not exist.
+2024-10-22 05:07:46,731 Forms are valid.
+2024-10-22 05:07:46,731 Promo code '' does not exist.
+2024-10-22 05:17:19,651 Forms are valid.
+2024-10-22 05:17:19,652 Promo code 'яыч' does not exist.
+2024-10-22 05:17:20,705 Forms are valid.
+2024-10-22 05:17:20,705 Promo code 'яыч' does not exist.
+2024-10-22 05:17:25,129 Forms are valid.
+2024-10-22 05:17:25,130 Promo code '' does not exist.
+2024-10-22 05:17:33,193 Forms are valid.
+2024-10-22 05:17:33,206 Promo code 'zoobazar20' applied with discount 20%.
+2024-10-22 05:25:34,501 AddToCartForm is not valid.
+2024-10-22 05:25:54,388 Cart is empty!
+2024-10-22 05:26:43,025 Cart is empty!
+2024-10-22 05:26:45,140 AddToCartForm is not valid.
+2024-10-22 05:26:46,850 AddToCartForm is valid.
+2024-10-22 05:26:54,116 Forms are valid.
+2024-10-22 05:26:54,117 Promo code 'фыв' does not exist.
+2024-10-22 05:26:55,585 Forms are valid.
+2024-10-22 05:26:55,585 Promo code 'фыв' does not exist.
+2024-10-22 05:26:56,410 Forms are valid.
+2024-10-22 05:26:56,410 Promo code 'фыв' does not exist.
+2024-10-22 05:26:56,667 Forms are valid.
+2024-10-22 05:26:56,668 Promo code 'фыв' does not exist.
+2024-10-22 05:26:56,870 Forms are valid.
+2024-10-22 05:26:56,871 Promo code 'фыв' does not exist.
+2024-10-22 05:26:57,050 Forms are valid.
+2024-10-22 05:26:57,051 Promo code 'фыв' does not exist.
+2024-10-22 05:28:11,105 Forms are valid.
+2024-10-22 05:28:11,105 Promo code 'фыв' does not exist.
+2024-10-22 05:36:59,299 Forms are valid.
+2024-10-22 05:36:59,300 Promo code '' does not exist.
+2024-10-22 05:37:02,393 Forms are valid.
+2024-10-22 05:37:02,394 Promo code 'sdfg' does not exist.
+2024-10-22 05:37:10,054 Forms are valid.
+2024-10-22 05:37:10,069 Promo code 'zoobazar20' applied with discount 20%.
+2024-10-22 05:37:33,157 AddToCartForm is not valid.
+2024-10-22 05:37:40,782 AddToCartForm is not valid.
+2024-10-22 05:37:42,803 AddToCartForm is valid.
+2024-10-22 05:37:54,272 Forms are valid.
+2024-10-22 05:37:54,273 Promo code '' does not exist.
+2024-10-22 05:37:55,988 Forms are valid.
+2024-10-22 05:37:55,989 Promo code '' does not exist.
+2024-10-22 05:37:56,903 Forms are valid.
+2024-10-22 05:37:56,903 Promo code '' does not exist.
+2024-10-22 05:37:59,800 Forms are valid.
+2024-10-22 05:37:59,800 Promo code '' does not exist.
+2024-10-22 05:40:14,656 Forms are valid.
+2024-10-22 05:40:14,656 Promo code '' does not exist.
+2024-10-22 05:40:19,007 Forms are valid.
+2024-10-22 05:40:19,007 Promo code 'fgh' does not exist.
+2024-10-22 05:40:21,765 Forms are valid.
+2024-10-22 05:40:21,766 Promo code 'fgh' does not exist.
+2024-10-22 05:40:22,791 Forms are valid.
+2024-10-22 05:40:22,791 Promo code 'fgh' does not exist.
+2024-10-22 05:40:33,574 AddToCartForm is not valid.
+2024-10-22 05:40:36,170 AddToCartForm is valid.
+2024-10-22 05:40:43,624 Forms are valid.
+2024-10-22 05:40:43,625 Promo code '' does not exist.
+2024-10-22 05:40:45,421 Forms are valid.
+2024-10-22 05:40:45,422 Promo code '' does not exist.
+2024-10-22 05:47:05,705 Logout successfully.
+2024-10-22 05:47:09,950 LoginForm is valid.
+2024-10-22 05:47:10,296 Login user success.
+2024-10-22 05:47:20,654 Logout successfully.
+2024-10-22 05:47:26,855 LoginForm is valid.
+2024-10-22 05:47:27,196 Login user success.
+2024-10-22 05:47:39,485 AddToCartForm is not valid.
+2024-10-22 05:47:41,947 AddToCartForm is valid.
+2024-10-22 05:52:29,744 Forms are valid.
+2024-10-22 05:52:29,745 Promo code '' does not exist.
+2024-10-22 05:54:16,206 Forms are valid.
+2024-10-22 05:54:16,219 Promo code 'zoobazar20' applied with discount 20%.
+2024-10-22 05:56:14,858 AddToCartForm is not valid.
+2024-10-22 05:56:18,759 AddToCartForm is valid.
+2024-10-22 05:56:30,032 Updated quantity for item Crispy, сухой корм для кроликов to 3.
+2024-10-22 05:56:32,617 Cart is empty!
+2024-10-22 05:56:44,409 AddToCartForm is not valid.
+2024-10-22 05:59:54,937 AddToCartForm is not valid.
+2024-10-22 12:47:44,022 AddToCartForm is not valid.
+2024-10-22 13:09:58,312 AddToCartForm is not valid.
+2024-10-22 13:10:01,201 AddToCartForm is valid.
+2024-10-22 13:10:25,664 Forms are valid.
+2024-10-22 13:10:25,666 Promo code '' does not exist.
+2024-10-22 13:13:57,655 Forms are valid.
+2024-10-22 13:13:57,656 Promo code 'авывапмав' does not exist.
+2024-10-22 13:14:06,858 Forms are valid.
+2024-10-22 13:14:06,859 Promo code '' does not exist.
+2024-10-22 13:19:11,751 Forms are valid.
+2024-10-22 13:19:11,751 Promo code '' does not exist.
+2024-10-22 13:21:16,644 Cart is empty!
+2024-10-22 13:21:19,555 AddToCartForm is not valid.
+2024-10-22 13:21:21,582 AddToCartForm is valid.
+2024-10-22 13:21:27,481 Forms are valid.
+2024-10-22 13:21:27,482 Promo code '' does not exist.
+2024-10-22 13:21:46,817 Forms are valid.
+2024-10-22 13:21:46,838 Promo code 'zoobazar20' applied with discount 20%.
+2024-10-22 13:23:34,765 Cart is empty!
+2024-10-22 13:23:37,386 AddToCartForm is not valid.
+2024-10-22 13:23:41,303 AddToCartForm is valid.
+2024-10-22 13:23:49,934 Forms are valid.
+2024-10-22 13:23:49,935 Promo code '' does not exist.
+2024-10-22 13:24:06,139 Forms are valid.
+2024-10-22 13:24:06,140 Promo code 'ыувыкап' does not exist.
+2024-10-22 13:26:16,280 Forms are valid.
+2024-10-22 13:26:16,280 Promo code 'ыувыкап' does not exist.
+2024-10-22 13:27:19,585 Forms are valid.
+2024-10-22 13:27:19,585 Promo code 'ыувыкап' does not exist.
+2024-10-22 13:27:22,465 Logout successfully.
+2024-10-22 13:30:42,569 LoginForm is valid.
+2024-10-22 13:30:43,699 Login user success.
+2024-10-22 13:30:55,271 Forms are not valid.
+2024-10-22 13:31:00,128 Forms are not valid.
+2024-10-22 13:34:13,141 Forms are not valid.
+2024-10-22 13:35:29,299 Forms are not valid.
+2024-10-22 13:35:36,327 Forms are not valid.
+2024-10-22 13:38:21,396 Forms are not valid.
+2024-10-22 13:38:37,806 Forms are not valid.
+2024-10-22 13:42:36,267 Forms are not valid.
+2024-10-22 13:45:04,415 Forms are not valid.
+2024-10-22 13:45:09,768 Forms are not valid.
+2024-10-22 13:45:11,011 Forms are not valid.
+2024-10-22 13:45:20,058 Forms are not valid.
+2024-10-22 13:45:21,488 Forms are not valid.
+2024-10-22 13:45:23,831 Forms are not valid.
+2024-10-22 13:46:05,906 Forms are not valid.
+2024-10-22 13:47:27,770 Forms are not valid.
+2024-10-22 17:55:02,615 Logout successfully.

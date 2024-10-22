@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Отзывы</h1>
+
+<div>
+    {% for review in reviews %}
+        <div>
+            <p><strong>Оценка:</strong> {{ review.rate }}</p>
+            <blockquote>
+                <p>{{ review.text }}</p>
+            </blockquote>
+            <p>
+                <time>{{ review.created|date:'H:i, d E Y' }}</time> |
+                <strong>{{ review.author.name }}</strong>
+            </p>
+            <hr>
+        </div>
+    {% empty %}
+        <p>Нет отзывов.</p>
+    {% endfor %}
+</div>
+
+{% if request.user.client %}
+    <p><a href="{% url 'add_review' %}">Добавить отзыв</a></p>
+{% endif %}
+
+{% if not request.user.client and not request.user.is_superuser %}
+    <p><a href="{% url 'login' %}">Добавить отзыв</a></p>
+{% endif %}
+{% endblock %}

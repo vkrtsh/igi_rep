@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Список вакансий</h1>
+  <a href="{% url 'vacancy_create' %}">Добавить вакансию</a>
+  <ul>
+    {% for vacancy in vacancies %}
+      <li>
+        <a href="{% url 'vacancy_detail' vacancy.id %}">{{ vacancy.position }}</a> - {{ vacancy.salary }} руб.
+        <a href="{% url 'vacancy_update' vacancy.id %}">Редактировать</a>
+        <a href="{% url 'vacancy_delete' vacancy.id %}">Удалить</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}

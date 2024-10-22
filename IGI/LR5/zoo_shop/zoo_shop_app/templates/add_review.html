@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block header %}Оставить отзыв{% endblock %}
+{% block content %}
+
+<form method="POST">
+	{% csrf_token %}
+	<h2>Оставьте отзыв</h2>
+	<b>{{ form.as_p }}</b>
+	<button type="submit" >Опубликовать</button>
+</form>
+     <p><form action="{% url 'reviews' %}" method="get">
+    <button type="submit">Назад</button>
+    </form></p>
+
+{% endblock content%}

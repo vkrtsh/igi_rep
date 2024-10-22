@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Поставщики</h1>
+{% for supplier in suppliers %}
+    <div>
+        <h2>{{ supplier.name }}</h2>
+        <p>{{ supplier.country }}</p>
+        <p>{{ supplier.phone }}</p>
+        <p>{{ supplier.email }}</p>
+    </div>
+{% endfor %}
+{% endblock %}

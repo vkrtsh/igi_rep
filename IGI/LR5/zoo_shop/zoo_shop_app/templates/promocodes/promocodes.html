@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 style="text-align: center;">Промокоды и купоны</h1>
+
+<h2>Действующие промокоды</h2>
+{% for promo in promo_active %}
+    <div style="margin-bottom: 20px; padding: 10px; border: 1px solid #4CAF50; border-radius: 5px;">
+        <h3 style="margin: 0; color: #4CAF50;">{{ promo.code }}</h3>
+        <p><strong>Скидка:</strong> {{ promo.discount }}%</p>
+        <p><strong>Описание:</strong> {{ promo.text }}</p>
+        <p><strong>Действителен до:</strong> {{ promo.valid_date|date:'d F Y' }}</p>
+    </div>
+{% empty %}
+    <p>Нет действующих промокодов.</p>
+{% endfor %}
+
+<h2>Архивные промокоды</h2>
+{% for promo in promo_archived %}
+    <div style="margin-bottom: 20px; padding: 10px; border: 1px solid #ff66d1; border-radius: 5px;">
+        <h3 style="margin: 0; color: #ff66d1;">{{ promo.code }}</h3>
+        <p><strong>Скидка:</strong> {{ promo.discount }}%</p>
+        <p><strong>Описание:</strong> {{ promo.text }}</p>
+        <p><strong>Истек:</strong> {{ promo.valid_date|date:'j E Y' }}</p>
+    </div>
+{% empty %}
+    <p>Нет архивных промокодов.</p>
+{% endfor %}
+{% endblock %}

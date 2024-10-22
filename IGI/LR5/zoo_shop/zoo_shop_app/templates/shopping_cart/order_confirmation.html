@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Order Confirmation</h1>
+  <p>Thank you for your purchase! Your order ID is {{ order.id }}.</p>
+  <p>Total Cost: {{ order.total_cost }}</p>
+  <p>Delivery Address: {{ order.address }}</p>
+    <p>
+  <form action="{% url 'products' %}" method="get">
+    <button type="submit" class="btn btn-primary">Продолжить покупки</button>
+  </form> </p>
+{% endblock %}

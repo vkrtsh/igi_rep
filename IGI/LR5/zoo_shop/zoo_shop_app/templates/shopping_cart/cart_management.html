@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Корзина</h1>
+
+<ul>
+    {% for item in cart_summary %}
+        <li>
+            {{ item.product.name }}:
+            <strong>{{ item.quantity }}</strong> x {{ item.product.price }} = {{ item.total_cost }}
+
+            <form action="{% url 'remove_from_cart' item.id %}" method="post" style="display:inline;">
+                {% csrf_token %}
+                <button type="submit">Удалить из корзины</button>
+            </form>
+
+            <form action="{% url 'update_cart' item.id %}" method="post" style="display:inline;">
+                {% csrf_token %}
+                <input type="number" name="quantity" value="{{ item.quantity }}" min="1" max="100">
+                <button type="submit">Изменить количество</button>
+            </form>
+        </li>
+    {% empty %}
+        <li>Корзина пуста.</li>
+    {% endfor %}
+</ul>
+
+<p>Общая стоимость: {{ total_cost }}</p>
+
+<p>
+    <form action="{% url 'create_order' %}" method="get">
+        <button type="submit">Перейти к оформлению заказа</button>
+    </form>
+</p>
+
+<form action="{% url 'clear_cart' %}" method="post">
+    {% csrf_token %}
+    <button type="submit">Очистить корзину</button>
+</form>
+
+<p>
+    <form action="{% url 'products' %}" method="get">
+        <button type="submit">Продолжить покупки</button>
+    </form>
+</p>
+
+{% endblock %}
